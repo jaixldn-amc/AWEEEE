@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eadcff">
+  <title>A Little Surprise for You 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="welcome-screen" id="welcomeScreen">
+    <div class="floating-decor decor-one">♡</div>
+    <div class="floating-decor decor-two">✦</div>
+    <div class="floating-decor decor-three">💜</div>
+    <div class="floating-decor decor-four">🐾</div>
+
+    <section class="welcome-card">
+      <div class="top-label">pssst... something cute is waiting</div>
+
+      <div class="cat-gallery" aria-label="Cute cats">
+        <div class="kitty kitty-left">
+          <span class="cat-ear left-ear"></span><span class="cat-ear right-ear"></span>
+          <span class="cat-face">
+            <i class="eye eye-left"></i><i class="eye eye-right"></i>
+            <i class="nose"></i><i class="mouth"></i>
+            <i class="blush blush-left"></i><i class="blush blush-right"></i>
+          </span>
+          <span class="cat-paw paw-left"></span><span class="cat-paw paw-right"></span>
+        </div>
+        <div class="kitty kitty-center">
+          <span class="cat-ear left-ear"></span><span class="cat-ear right-ear"></span>
+          <span class="cat-face">
+            <i class="eye eye-left"></i><i class="eye eye-right"></i>
+            <i class="nose"></i><i class="mouth"></i>
+            <i class="blush blush-left"></i><i class="blush blush-right"></i>
+          </span>
+          <span class="cat-paw paw-left"></span><span class="cat-paw paw-right"></span>
+          <span class="heart-mark">♥</span>
+        </div>
+        <div class="kitty kitty-right">
+          <span class="cat-ear left-ear"></span><span class="cat-ear right-ear"></span>
+          <span class="cat-face">
+            <i class="eye eye-left"></i><i class="eye eye-right"></i>
+            <i class="nose"></i><i class="mouth"></i>
+            <i class="blush blush-left"></i><i class="blush blush-right"></i>
+          </span>
+          <span class="cat-paw paw-left"></span><span class="cat-paw paw-right"></span>
+        </div>
+      </div>
+
+      <p class="little-line">meow meow! a tiny surprise just for you</p>
+      <h1>Hey, you! <span>♡</span></h1>
+      <p class="invitation">
+        I made something special to make you smile.<br>
+        Come on, don't be shy... your little surprise is waiting!
+      </p>
+
+      <div class="arrow-hint" aria-hidden="true">
+        <span>CLICK HERE!</span>
+        <svg viewBox="0 0 100 65">
+          <path d="M8 8 C35 5 45 24 70 45" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+          <path d="M52 42 L73 49 L69 27" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <button class="enter-button" id="enterButton" type="button">
+        <span>ENTER</span><span class="button-heart">♡</span>
+      </button>
+      <p class="footer-note">a little click, a lot of love 💜</p>
+    </section>
+  </main>
+
+  <main class="surprise-screen hidden" id="surpriseScreen">
+    <div class="surprise-card">
+      <p class="eyebrow">a little cheer just for you ✦</p>
+      <h2>GOOD LUCK!</h2>
+      <p class="subtitle">Sending you all the love and lucky vibes 💜</p>
+
+      <div class="big-cat" aria-label="A cute smiling lavender cat">
+        <svg viewBox="0 0 300 300" role="img" aria-label="Cute lavender cat">
+          <defs>
+            <linearGradient id="fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2caff"/><stop offset="1" stop-color="#a276d6"/></linearGradient>
+          </defs>
+          <ellipse cx="150" cy="267" rx="92" ry="15" fill="#8e61bf" opacity=".16"/>
+          <path d="M78 105L69 28Q67 12 82 23L130 66Q150 58 170 66L218 23Q233 12 231 30L222 111Z" fill="url(#fur)" stroke="#8257b7" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M83 43L116 72L91 88Z M217 43L184 72L209 88Z" fill="#ffcae8"/>
+          <ellipse cx="150" cy="160" rx="100" ry="105" fill="url(#fur)" stroke="#8257b7" stroke-width="5"/>
+          <ellipse cx="150" cy="197" rx="61" ry="49" fill="#fff4ff"/>
+          <ellipse cx="113" cy="151" rx="11" ry="17" fill="#482b70"/><ellipse cx="187" cy="151" rx="11" ry="17" fill="#482b70"/>
+          <circle cx="117" cy="145" r="4" fill="white"/><circle cx="191" cy="145" r="4" fill="white"/>
+          <ellipse cx="150" cy="181" rx="9" ry="6" fill="#e77bb8"/>
+          <path d="M150 187Q137 202 125 190M150 187Q163 202 175 190" fill="none" stroke="#70448f" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="91" cy="181" rx="16" ry="9" fill="#f49bc9" opacity=".7"/><ellipse cx="209" cy="181" rx="16" ry="9" fill="#f49bc9" opacity=".7"/>
+          <path d="M93 203Q48 190 39 210M207 203Q252 190 261 210" fill="none" stroke="#70448f" stroke-width="3" stroke-linecap="round"/>
+          <path d="M90 250Q63 228 53 247Q45 265 75 271L111 267M210 250Q237 228 247 247Q255 265 225 271L189 267" fill="#c59be9" stroke="#8257b7" stroke-width="4"/>
+        </svg>
+      </div>
+
+      <p class="goodluck-message">You can do it, <span>my baby!</span> 💜</p>
+      <p class="encouragement">Believe in yourself — I'm cheering for you!</p>
+
+      <div class="clapping-cats" aria-label="Clapping cats">
+        <span>🐱👏</span><span>😺👏</span><span>🐱👏</span>
+      </div>
+      <p class="clap-caption">CLAP CLAP CLAP! YOU'VE GOT THIS!</p>
+      <button class="back-button" id="backButton" type="button">BACK</button>
+    </div>
+  </main>
+
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+// Get the elements from the HTML
+const enterButton = document.getElementById("enterButton");
+const backButton = document.getElementById("backButton");
+
+const landingPage = document.getElementById("landingPage");
+const surprisePage = document.getElementById("surprisePage");
+
+// When the ENTER button is clicked
+enterButton.addEventListener("click", function () {
+    // Hide the landing page
+    landingPage.classList.add("hidden");
+
+    // Show the surprise page
+    surprisePage.classList.remove("hidden");
+
+    // Start the heart animation
+    createHearts();
+});
+
+// When the BACK button is clicked
+backButton.addEventListener("click", function () {
+    // Hide the surprise page
+    surprisePage.classList.add("hidden");
+
+    // Show the landing page
+    landingPage.classList.remove("hidden");
+});
+
+// Function to create floating hearts
+function createHearts() {
+    const heartContainer = document.getElementById("heartContainer");
+
+    // Clear previous hearts
+    heartContainer.innerHTML = "";
+
+    // Create 20 hearts
+    for (let i = 0; i < 20; i++) {
+        const heart = document.createElement("span");
+
+        heart.innerHTML = "💜";
+        heart.classList.add("heart");
+
+        // Random horizontal position
+        heart.style.left = Math.random() * 100 + "%";
+
+        // Random animation delay
+        heart.style.animationDelay = Math.random() * 2 + "s";
+
+        // Random animation duration
+        heart.style.animationDuration = (2 + Math.random() * 3) + "s";
+
+        heartContainer.appendChild(heart);
+    }
+}
